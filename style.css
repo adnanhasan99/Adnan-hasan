@@ -1,0 +1,77 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+div.navbar {
+	color: white;
+	background-color: palevioletred;
+	text-align: center;
+	height: 10vh;
+	font-size: 1rem;
+	display: flex;
+}
+h2 {
+	font-family: fantasy;
+	font-style: italic;
+	margin: auto;
+	text-align: center;
+	font-size: 1.25rem;
+}
+
+.carousel {
+	background-size: cover;
+	background-image: url(./images/main.jpg);
+	height: 400px;
+	width: 600px;
+	margin: 40px auto;
+	border-radius: 8px;
+	border-color: rgb(0, 247, 255);
+	border-width: 5px;
+	border-style: groove;
+}
+.question {
+	margin-left: 2vw;
+}
+.answer {
+	padding: 10px;
+	padding-right: 200px;
+	background-color: palevioletred;
+	color: white;
+	font-weight: bold;
+	border: rgb(0, 247, 255) solid 1px;
+	border-radius: 5px;
+	text-align: start;
+}
+
+.answer.correct {
+	transition: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+	transition-duration: 200ms;
+	background-color: rgb(102, 180, 102);
+}
+.answer.wrong {
+	transition: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+	transition-duration: 200ms;
+	background-color: rgb(250, 89, 89);
+}
+input[type="checked"] {
+	color: aqua;
+}
+.form {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.actions {
+	display: flex;
+	margin: 30px;
+}
+button {
+	color: white;
+	font-weight: bolder;
+	font-size: 1.5rem;
+	background-image: linear-gradient(aqua, palevioletred);
+	opacity: 0.5;
+	width: 60vw;
+	margin: auto;
+	border-radius: 8px;
+}
